@@ -99,6 +99,9 @@ body{
 	padding: 10px 15px !important;
 	display: inline-block;
 }
+.nav-link img{
+	width: 25px;
+}
 .nav-item:hover .nav-link{
     color: #ffffff !important;
     background-color: #FE6500;
