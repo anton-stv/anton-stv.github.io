@@ -1,17 +1,24 @@
 /* ----- Main ----- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
-body{
-	font-family: 'Open sans', sans-serif;
+a, body, input, select, textarea, label {
+	font-family: 'Open Sans';
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1.5em;
+
+
+
+/*	font-family: 'Open sans', sans-serif;
 	font-size: 16px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #212112;
 	background-color: #fff;
 	overflow-x: hidden;
-	transition: all 200ms linear;
+	transition: all 200ms linear;*/
 }
-a, a:hover{text-decoration: none;}
+a, a:hover, a:focus-visible{text-decoration: none;}
 ul li{list-style: none;}
 /* ----- Main ----- */
 
@@ -100,7 +107,7 @@ ul li{list-style: none;}
 	font-weight: 500;
 	transition: all 200ms linear;	
 	position: relative;
-	padding: 10px 15px !important;
+	/*padding: 10px 15px !important;*/
 	display: inline-block;
 }
 .nav-link img{
@@ -190,6 +197,7 @@ ul li{list-style: none;}
 	border: 0;
 	border-radius: 0;
 	padding: 10px;
+	font-weight: bold;
 }
 .link_primary {
 	color: #fff;
@@ -247,7 +255,6 @@ ul li{list-style: none;}
 }
 .tc-pp, .copyright{
 	font-size: 12px;
-	opacity: .5;
 }
 .footer a:hover{
 	text-decoration: underline;
@@ -283,12 +290,29 @@ ul li{list-style: none;}
 }
 /* ----- Footer ----- */
 
-/* ----- Media ----- */
-@media (min-width: 768px) {
+
+@media (min-width: 993px){
 	.navbar-brand{
 		position: absolute;
 		bottom: 0;
 	}
+}
+
+
+@media (min-width: 768px) and (max-width: 992px){
+	.navbar-brand {
+		position: absolute;
+		bottom: 35px;
+	}
+}
+
+
+/* ----- Media ----- */
+@media (min-width: 768px) {
+	a, body, input, select, textarea, label {
+		font-size: 14px;
+	}	
+
 }
 @media (max-width: 767px) { 
 	.nav-item:hover .nav-link {
