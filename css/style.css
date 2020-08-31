@@ -18,7 +18,7 @@ a, body, input, select, textarea, label {
 	overflow-x: hidden;
 	transition: all 200ms linear;*/
 }
-a, a:hover, a:focus-visible{text-decoration: none;}
+a, a:hover, a:focus-visible{text-decoration: none !important;}
 ul li{list-style: none;}
 /* ----- Main ----- */
 
