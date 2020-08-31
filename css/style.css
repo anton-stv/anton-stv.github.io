@@ -22,6 +22,11 @@ a, a:hover, a:focus-visible{text-decoration: none !important;}
 ul li{list-style: none;}
 /* ----- Main ----- */
 
+/*body.ofh{
+	overflow: hidden;
+}
+*/
+
 /* ----- Navigation ----- */
 .start-header {
 	opacity: 1;

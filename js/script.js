@@ -12,3 +12,9 @@
 	});	
 
   })(jQuery);
+
+//   $(function(){
+// 	$("button.navbar-toggler").click(function(){
+// 		$("body").toggleClass("ofh"); return false;
+// 	});
+// });
