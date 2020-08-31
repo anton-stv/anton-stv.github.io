@@ -300,6 +300,7 @@ ul li{list-style: none;}
 
 
 @media (min-width: 768px) and (max-width: 992px){
+
 	.navbar-brand {
 		position: absolute;
 		bottom: 35px;
@@ -315,9 +316,9 @@ ul li{list-style: none;}
 
 }
 @media (max-width: 767px) { 
-	.navigation-wrap .navbar-collapse.collapse.show{
-	    overflow: scroll;
-    	height: 100vh;
+	.navbar .show{
+		overflow-x: hidden;
+    	overflow-y: auto;
 	}
 	.nav-item:hover .nav-link {
 		color: #FE6500 !important;
