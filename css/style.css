@@ -328,7 +328,7 @@ ul li{list-style: none;}
 @media (max-width: 767px) { 
 	/* ----- NAV ----- */
 	.nav-link{
-		padding: 5px 10px !important;
+		padding: 10px 15px !important;
 	}
 	.nav-item:hover .nav-link {
 		color: #FE6500 !important;
