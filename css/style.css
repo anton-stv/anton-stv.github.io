@@ -13,8 +13,16 @@ ul li{list-style: none;}
 /* ----- Main ----- */
 
 
-.nav-item.show .nav-link{
-	-webkit-appearance: none;
+
+.nav-link:active, .nav-link:focus {
+  outline: none !important;
+}
+.nav-link::-moz-focus-inner {
+  border: 0 !important;
+}
+
+:focus {
+  outline: none !important;
 }
 
 /* ----- NAVIGATION ----- */
