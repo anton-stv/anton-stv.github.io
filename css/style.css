@@ -13,18 +13,6 @@ ul li{list-style: none;}
 /* ----- Main ----- */
 
 
-
-.nav-link:active, .nav-link:focus {
-  outline: none !important;
-}
-.nav-link::-moz-focus-inner {
-  border: 0 !important;
-}
-
-:focus {
-  outline: none !important;
-}
-
 /* ----- NAVIGATION ----- */
 .start-header {
 	opacity: 1;
@@ -136,6 +124,12 @@ ul li{list-style: none;}
 .nav-item_primary{
 	padding-left: 0px !important;
 	background-color: #4ccef0;
+}
+.nav-link:active, .nav-link:focus {
+  outline: none !important;
+}
+.nav-link::-moz-focus-inner {
+  border: 0 !important;
 }
 /* -----\\ NAVIGATION ----- */
 
