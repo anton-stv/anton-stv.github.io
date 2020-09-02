@@ -1,33 +1,21 @@
-/* ----- Main ----- */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
 
+/* ----- Main ----- */
 a, body, input, select, textarea, label {
 	font-family: 'Open Sans';
 	font-style: normal;
 	font-weight: normal;
 	line-height: 1.5em;
-
-
-
-/*	font-family: 'Open sans', sans-serif;
-	font-size: 16px;
-	line-height: 24px;
-	font-weight: 400;
-	color: #212112;
-	background-color: #fff;
-	overflow-x: hidden;
-	transition: all 200ms linear;*/
+	font-size: 100%;
 }
 a, a:hover, a:focus-visible{text-decoration: none !important;}
 ul li{list-style: none;}
 /* ----- Main ----- */
 
-/*body.ofh{
-	overflow: hidden;
-}
-*/
 
-/* ----- Navigation ----- */
+
+
+/* ----- NAVIGATION ----- */
 .start-header {
 	opacity: 1;
 	transform: translateY(0);
@@ -48,8 +36,8 @@ ul li{list-style: none;}
 	transition : all 0.3s ease-out;
 }
 .navigation-wrap{
-    position: fixed;
-    width: 100%;
+	position: fixed;
+	width: 100%;
 	top: 0;
 	left: 0;
 	z-index: 1000;
@@ -112,7 +100,7 @@ ul li{list-style: none;}
 	font-weight: 500;
 	transition: all 200ms linear;	
 	position: relative;
-	/*padding: 10px 15px !important;*/
+	padding: 10px 15px !important;
 	display: inline-block;
 }
 .nav-link img{
@@ -139,9 +127,10 @@ ul li{list-style: none;}
 	padding-left: 0px !important;
 	background-color: #4ccef0;
 }
-/* ----- Navigation ----- */
+/* -----\\ NAVIGATION ----- */
 
-/* ----- Primary style ----- */
+
+/* ----- PRIMARY STYLE ----- */
 .bg-light {
 	background-color: #fff !important;
 	transition: all 200ms linear;
@@ -221,9 +210,9 @@ ul li{list-style: none;}
 .link_secondary:hover{
 	color: #4ccef0;
 }
-/* ----- Primary style ----- */
+/* -----\\ PRIMARY STYLE ----- */
 
-/* ----- Footer ----- */
+/* ----- FOOTER ----- */
 .footer{
 	background-color: #4CCEF0;
 	color: #fff;
@@ -272,7 +261,6 @@ ul li{list-style: none;}
 .fa-angle-double-right {
 	animation: rightanime 1s linear infinite;
 }
-
 .fa-angle-double-left {
 	animation: leftanime 1s linear infinite;
 }
@@ -296,17 +284,34 @@ ul li{list-style: none;}
 		opacity: 0;
 	}
 }
-/* ----- Footer ----- */
+/* -----\\ FOOTER ----- */
 
 
+
+
+
+
+/* ----- MEDIA ----- */
+@media (max-width: 900px) {
+	html.noscroll {
+		overflow: hidden;
+	}
+	body.noscroll {
+		overflow: visible;
+		height: 100%;
+	}
+	.scroll{
+		height: 100%;
+		overflow: scroll;
+		-webkit-overflow-scrolling: touch;
+	}
+}
 @media (min-width: 993px){
 	.navbar-brand{
 		position: absolute;
 		bottom: 0;
 	}
 }
-
-
 @media (min-width: 768px) and (max-width: 992px){
 
 	.navbar-brand {
@@ -314,20 +319,11 @@ ul li{list-style: none;}
 		bottom: 35px;
 	}
 }
-
-
-/* ----- Media ----- */
 @media (min-width: 768px) {
-	a, body, input, select, textarea, label {
-		font-size: 14px;
-	}	
 
 }
 @media (max-width: 767px) { 
-	.navbar .show{
-		overflow-x: hidden;
-    	overflow-y: auto;
-	}
+	/* ----- NAV ----- */
 	.nav-item:hover .nav-link {
 		color: #FE6500 !important;
 		background-color: #fff;
@@ -378,30 +374,25 @@ ul li{list-style: none;}
 		margin-top: 10px !important;
 		margin-bottom: 20px !important;
 	}
+	/* -----\\ NAV ----- */
 
-
-	/* ----- Footer ----- */
+	/* ----- FOOTER ----- */
 	.column ul {
 		margin-bottom: 0;
 	}
-
 	.column .collapse {
 		display: none;
 	}
-
 	.column .collapse.show {
 		display: block;
 	}
-
 	.column .title .fa-angle-up,
 	.column .title[aria-expanded=true] .fa-angle-down {
 		display: none;
 	}
-
 	.column .title[aria-expanded=true] .fa-angle-up {
 		display: block;
 	}
-
 	.column .navbar-toggler {
 		display: inline-block;
 		padding: 0;
@@ -410,17 +401,16 @@ ul li{list-style: none;}
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: 600;
-		font-size: 26px;
+		font-size: 1em;
 		color: #FFFFFF;
-		text-shadow: 0px 3px 5px rgba(0, 0, 0, 0.15);
 	}
 	.column ul {
 		font-family: Open Sans;
 		font-style: normal;
 		font-weight: normal;
-		font-size: 20px;
-		line-height: 26px;
-		color: #FFFFFF;
+		font-size: 0.8em;
+		line-height: 1em;
+		color: #fff;
 		padding-left: 15px;
 	}
 	.column ul li {
@@ -432,8 +422,6 @@ ul li{list-style: none;}
 	.tc-pp, .copyright{
 		text-align: center;
 	} 
-	/* ----- Footer ----- */
-
-
+	/* -----\\ FOOTER ----- */
 }
-/* ----- Media ----- */
+/* -----\\ MEDIA ----- */
