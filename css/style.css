@@ -13,7 +13,9 @@ ul li{list-style: none;}
 /* ----- Main ----- */
 
 
-
+.nav-item.show .nav-link{
+	-webkit-appearance: none;
+}
 
 /* ----- NAVIGATION ----- */
 .start-header {
